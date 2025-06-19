@@ -1,2 +1,186 @@
 
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Forza Electricidad</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #111;
+    background: #fff;
+  }
+  header {
+    background: #002f6c;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1581090700227-1f4c44f3f0f9') center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .section h2 {
+    color: #002f6c;
+    margin-bottom: 1rem;
+  }
+  .products, .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  .product, .service {
+    background: #f2f2f2;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .contact-form {
+    background: #eaeaea;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    background: #ffcc00;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+  }
+  .whatsapp-btn {
+    background: #25d366;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div><strong>FORZA ELECTRICIDAD</strong></div>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Potenciamos tu energía</h1>
+    <p>Materiales eléctricos de calidad para todos tus proyectos</p>
+    <a href="https://wa.me/5493518191427" class="whatsapp-btn">Contactanos por WhatsApp</a>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>Forza Electricidad</strong> nos dedicamos a la venta y distribución de materiales eléctricos de alta calidad. Ofrecemos soluciones seguras y eficientes para instalaciones eléctricas residenciales, comerciales e industriales. Nuestro equipo brinda atención personalizada y asesoramiento técnico para acompañarte en cada proyecto.</p>
+  </section>
+
+  <section id="productos" class="section">
+    <h2>Productos</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Cables</h3>
+        <p>Alta, media y baja tensión: aéreos y subterráneos de cobre y aluminio.</p>
+      </div>
+      <div class="product">
+        <h3>Iluminación</h3>
+        <p>Alumbrado público, industrial, interior y exterior.</p>
+      </div>
+      <div class="product">
+        <h3>Herramientas</h3>
+        <p>Herramientas eléctricas y de mano para profesionales.</p>
+      </div>
+      <div class="product">
+        <h3>Porteros</h3>
+        <p>Sistemas de porteros y videoporteros unifamiliares y multifamiliares.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <p>Venta mayorista y minorista</p>
+      </div>
+      <div class="service">
+        <p>Asesoramiento técnico</p>
+      </div>
+      <div class="service">
+        <p>Productos certificados</p>
+      </div>
+      <div class="service">
+        <p>Atención rápida y profesional</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <div class="contact-form">
+      <p>Completá el formulario y te responderemos a la brevedad.</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <a href="https://wa.me/5493518191427" class="whatsapp-btn">Escribinos por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Forza Electricidad © 2025</p>
+    <p>Whatsapp: 351 819 1427 | Email: forzaelectricidad@gmail.com</p>
+    <p>Córdoba, Argentina</p>
+  </footer>
+</body>
+</html>
+
  
